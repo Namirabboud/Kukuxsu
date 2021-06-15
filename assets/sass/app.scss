@@ -1,0 +1,115 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
+//@import '~@mdi/font/scss/materialdesignicons.scss';
+
+
+//global
+$direction           :ltr;
+$opposite-direction   :rtl;
+
+$start-direction     :left;
+$end-direction       :right;
+
+/*
+.material-icons {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: 'liga';
+}
+*/
+
+.main-container{
+
+  *{
+    transition: 0.3s all ease-in-out;
+  }
+
+  &.collapsed{
+    .main-content{
+      padding-#{$start-direction}: 50px;
+    }
+
+  }
+  .main-content{
+    padding-#{$start-direction}: $sidebar_width;
+  }
+
+}
+
+.v-sidebar-menu{
+  z-index: 88!important;
+}
+
+.v-dialog--active{
+  z-index: 99!important;
+}
+
+.v-alert__content{
+  font-size: 13px;
+}
+
+/*
+#CMS_VUE_BASE .v-sidebar-menu .vsm--arrow:after{
+  @extend .material-icons;
+  content: '\F0059';
+}
+
+
+#CMS_VUE_BASE  .v-sidebar-menu .vsm--toggle-btn:after{
+  @extend .material-icons;
+  content: '\F09C1';
+}
+ */
+
+.v-sidebar-menu{
+  top: $toolbar_height!important;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.clear-both{
+  clear: both;
+}
+
+.border-grey{
+  border: 1px solid grey;
+}
+
+#cms-main-toolbar{
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.container#cms-main-container{
+  margin-top: 50px !important;
+  max-width: 100% !important;
+}
+
+
+.tiptap-vuetify-editor__content{
+  min-height: 200px;
+
+  & > .ProseMirror{
+    min-height: 200px;
+    padding: 10px;
+  }
+}
+
+.vsm--header{
+  margin-top:15px;
+  margin-bottom: 10px;
+}
+

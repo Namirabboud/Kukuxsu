@@ -1,0 +1,30 @@
+{
+  "name": "Kukuxsu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.5",
+    "@nuxtjs/proxy": "^2.1.0",
+    "cookie": "^0.4.1",
+    "core-js": "^3.9.1",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.15.3",
+    "nuxt-material-design-icons": "^1.0.4",
+    "tiptap-vuetify": "^2.24.0",
+    "vue-sidebar-menu": "^4.7.4",
+    "vuetify-datetime-picker": "^2.1.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "sass": "~1.32.12"
+  }
+}
